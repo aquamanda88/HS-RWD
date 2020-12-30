@@ -1,0 +1,202 @@
+body{
+    font-family: "Noto Sans TC", serif;
+    background-color: #EFE9E7;
+}
+a, img{
+    display: block;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+header{
+    background-color: #000;
+    max-width: 100%;
+    padding: 0 10px 0 40px;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    .title a,.burgerBtn i{
+        color: #fff;
+    }
+    .title a{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .burgerBtn i{
+        font-size: 24px;
+    }
+}
+.menubar{
+    .menubarItem{
+        color: #fff;
+        padding: 18px 30px;
+    }
+    .menubarItem:hover{
+        color: $danger;
+    }
+}
+
+.burgerBtn{
+    display: none;
+}
+.banner{
+    background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/header_desktop.png);
+    background-size: cover;
+    background-position: center;
+    padding: 57px 10px 113px 10px;
+    .textArea{
+        background: rgba(0,0,0,0.35);
+        color: #fff;
+        text-align: center;
+        padding: 20px 6px;
+        width: 460px;
+        h2{
+            font-size: 36px;
+            font-weight: 300;
+        }
+        p{
+            font-weight: 100;
+        }
+    }
+}
+.gotopBtn{
+    display: block;
+    text-align: center;
+    background-color: $danger;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: 0.15s;
+    i{
+        font-size: 25px;
+        padding-top: 7px;
+    }
+}
+.gotopBtn:hover{
+    background-color: #C4561B;
+    color: #fff;
+}
+footer{
+    background-color: #EFE9E7;
+    padding: 50px 40px;
+    color: #3D1101;
+    .about, .contact{
+        width: 235px;
+        h2{
+            font-weight: 300;
+        }
+    }
+    .details{
+        width: 245px;
+    }
+    .contactList{
+        padding-left: 20px;
+        margin-bottom: 30px;
+        li{
+            list-style: disc;
+        }
+        li a{
+            color: #3D1101;
+        }
+        li a:hover{
+            color: $danger;
+        }
+    }
+    .iconList{
+        .iconList-item{
+            margin-right: 12px;
+        }
+        a i{
+            color: #fff;
+            font-size: 32px;
+        }
+        a i:hover{
+            opacity: 0.7;
+        }
+        .GPlus{
+            color: #DB4437;
+        }
+        .twitter{
+            color: #41ABE1;
+        }
+        .FB{
+            color: #3A5795;
+        }
+    }
+    .footerTitle{
+        font-size: 49px;
+        font-weight: 700;
+        text-align: right;
+        margin-bottom: 22px;
+    }
+}
+@include pad{
+    .banner{
+        .textArea{
+            width: 100%;
+        }
+    }
+    footer{
+        padding: 50px 15px;
+    }
+}
+@include phone{
+    header{
+        padding: 0 2px 0 13px;
+        .title a{
+            font-size: 18px;
+        }
+    }
+    .banner{
+        background-image: url(https://hexschool.github.io/Rwd_sketch_export/preview/Welcome%20-%20header_mobile.png);
+    }
+    .menubar{
+        padding-left: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 1.3s;
+        position: absolute;
+        top: 75px;
+        left: 0px;
+        right: 0px;
+        z-index: 100;
+        flex-direction: column;
+        background: currentcolor;
+        text-align: center;
+        opacity: 0.85;
+        li{
+            .menubarItem{
+                padding: 10px 20px;
+                color: #fff;
+                font-size: 20px;
+            }
+            .menubarItem:active{
+                background-color: #3D1101;
+            }
+        }
+    }
+    .burgerBtn{
+        display: block;
+        font-size: 24px;
+        padding: 20px;
+        color: #fff;
+    }
+    .active .menubar{
+        max-height: 500px;
+    }
+    footer{
+        .about, .contact, .details{
+            width: 100%;
+        }
+    }
+}

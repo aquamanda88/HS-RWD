@@ -1,0 +1,60 @@
+.fz-l{
+    font-size: 24px;
+}
+.fz-m{
+    font-size: 20px;
+}
+.fz-s{
+    font-size: 18px;
+}
+.fz-xs{
+    font-size: 14px;
+}
+.lh-m{
+    line-height: 1.5;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-100{
+    font-weight: 100;
+}
+.ta-c{
+    text-align: center;
+}
+.fs-i{
+    font-style: italic;
+}
+.addCart-btn{
+    padding: 6px 20px;
+}
+.PC-show{
+    display: block;
+}
+.M-show{
+    display: none;
+}
+@mixin PC-sm{
+    @media(max-width: 1024px){
+      @content;
+    }
+}
+@mixin pad{
+    @media(max-width: 768px){
+      @content;
+    }
+}
+@mixin phone{
+    @media(max-width: 560px){
+        @content;
+    }
+}
+
+@include phone{
+    .PC-show{
+        display: none;
+    }
+    .M-show{
+        display: block;
+    }
+}

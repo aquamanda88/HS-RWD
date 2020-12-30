@@ -1,0 +1,47 @@
+.memberArea{
+    padding-top: 50px;
+    color: $primary;
+    .slogan{
+        text-align: center;
+        h2{
+            font-weight: 700;
+            font-size: 48px;
+        }
+    }
+    form{
+        max-width: 100%;
+        padding: 15px;
+        border-top: solid 4px $danger;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.16);
+        .head-title h3{
+            font-weight: 700;
+        }
+        .rule{
+            width: 285px;
+        }
+        .input-icon{
+            position: relative;
+            display: inline-block;
+        }
+        .input-icon i{ 
+            position: absolute; 
+            left: 10px;
+            top: calc(74% - 0.5em);
+            font-size: 10px;
+            color: #3D1101;
+            opacity: 0.5;
+        }
+        .iconSec i{
+            top: calc(50% - 0.5em);
+        }
+        .input-icon input{
+            text-indent: 20px;
+        }
+        .haveAccount{
+            color: #FF5E45;
+        }
+        .accountBtn{
+            padding: 3px 45px;
+        }
+    }
+}

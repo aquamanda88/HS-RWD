@@ -1,0 +1,220 @@
+.productsArea{    
+    color: $primary;
+    font-weight: 300;
+}
+aside{
+    .menuTitle{
+        font-weight: 300;
+        i{
+            font-size: 26px;
+        }
+    }
+    .menuList{
+        a{
+            color: $primary;
+            border-bottom: solid 1px $primary;
+            padding: 5px 0 5px 8px;
+        }
+        .unSelected:hover{
+            background-color: #8d4025;
+            color: #fff;
+        }
+        .menuSelected{
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+}
+.searchBar{
+    width: 455px;
+}
+.searchBar-input, .searchBar-btn{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.searchBar-input{
+    background-color: #EFE9E7;;
+    border: solid 2px $primary;
+}
+.searchBar-btn{
+    padding: 5px 10px 3px 10px;
+    i{
+        font-size: 20px;
+    }
+}
+.cartBtn{
+    margin-bottom: 30px;
+}
+.cartText{
+    border-right: solid 1px $primary;
+    padding-right: 12px;
+    margin-right: 17px;
+}
+.cartIcon-img{
+    position: relative;
+    font-size: 27px;
+    .number{
+        position: absolute;
+        background-color: #FF5E45;        
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        right: 0;
+        p{
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
+.cardList-products{
+    .modal-header{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+.card-outline{
+    margin-bottom: 40px;
+}
+.card{
+    width: 220px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.16);
+    background-color: #EFE9E7;
+    position: relative;
+
+    // 熱銷美食
+    .HSale-block{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 100px;
+        height: 80px;
+        overflow: hidden;
+    }
+    .HSale-block::after, .HSale-block::before{
+        position: absolute;
+        content: "";
+        display: block;
+        border: 5px solid #078F6D;
+        z-index: 1;
+    }
+    .HSale-block::before{
+        top: 71px;
+        right: 0;
+    }
+    .HSale-block::after{
+        right: 71px;
+    }
+    .HSale-text{
+        background: #00CC99;
+        position: absolute;
+        text-align: center;
+        top: 20px;
+        right: -50px;
+        width: 160px;
+        padding: 2px 0;
+        color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: rotate(45deg);
+        z-index: 2;
+    }
+
+    // 小資首選
+    .cheep{
+        position: absolute;
+        background-color: #f24;
+        color: #fff;
+        top: 0;
+        right: 20px;
+        z-index: 1;
+        padding: 8px 0;
+        box-shadow: 1px 1px 3px dimgray;
+        p{
+            writing-mode: vertical-lr;
+            letter-spacing: 2px;
+            line-height: 2;
+        }
+    }
+
+    // 卡片頁首
+    .card-head{
+        height: 120px;
+        position: relative;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        outline: none;
+        i{
+            color: #fff;
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            font-size: 24px;
+            transition: all 0.3s;
+        }
+    }
+    .classic{
+        background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_1.png);
+    }
+    .handsome{
+        background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_2.png);
+    }
+    .borther{
+        background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_3.png);
+    }
+    .wish{
+        background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_4.png);
+    }
+    .brunch{
+        background-image: url(https://images.unsplash.com/photo-1561043433-9265f73e685f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);
+    }
+    .bagel{
+        background-image: url(https://images.unsplash.com/photo-1551360021-0ff7982d13dc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1426&q=80);
+    }
+    h3{
+        font-weight: 300;
+    }
+
+    // 卡片內容
+    .card-body{        
+        h3, span{
+            font-size: 20px;
+        }
+        p{
+            font-size: 12px;
+        }
+        .price{
+            padding: 20px 20px 13px 20px;
+            border-top: solid 1px $primary;
+        }
+    }
+    .addCart-btn{
+        margin: 0 10px 10px 10px;
+    }
+    .btn-outline-danger{
+        background-color: #EFE9E7;
+    }
+    .btn-outline-danger:hover{
+        background-color: #FF5E45;
+    }
+}
+
+@include pad{
+    .unSelected:active{
+        background-color: #8d4025;
+        color: #fff;
+    }
+    .searchBar{
+        width: 100%;
+    }
+    .cardList-products{
+        .card{
+            width: 100%;
+        }
+    }
+}
