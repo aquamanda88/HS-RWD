@@ -13090,6 +13090,10 @@ aside .menuList .menuSelected {
   color: #FF5E45;
 }
 
+.memberArea form .haveAccount:hover {
+  color: #ad3f2e;
+}
+
 .memberArea form .accountBtn {
   padding: 3px 45px;
 }
