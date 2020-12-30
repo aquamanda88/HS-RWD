@@ -10,10 +10,25 @@ main{
     padding: 50px 30px 20px 30px;
     max-width: 960px;
     margin: 0 auto;
+    position: relative;
+    h3::before, h3::after{
+        content: '';
+        width: 15%;
+        height: 1px;
+        background-color: $primary;
+        position: absolute;
+    }
+    h3::before{
+        left: 210px;
+        top: 80px;
+    }
     h3{
         text-align: center;
         margin-bottom: 31px;
         font-weight: 300;
+    }
+    h3::after{
+        right: 210px;
     }
     .visualItem{
         margin-bottom: 30px;
@@ -120,6 +135,11 @@ main{
     }
 }
 @include pad{
+    .secret{
+        h3::before, h3::after{
+            display: none;
+        }
+    }
     .todayChef{
         .chefImg{
             width: 375px;
