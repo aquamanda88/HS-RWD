@@ -1,0 +1,118 @@
+.fz-l {
+  font-size: 24px;
+}
+
+.fz-m {
+  font-size: 20px;
+}
+
+.fz-s {
+  font-size: 18px;
+}
+
+.lh-m {
+  line-height: 1.5;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+main {
+  background-color: #F5F5F5;
+  color: #3D1101;
+}
+
+.secret {
+  padding: 50px 30px 20px 30px;
+  font-weight: 300;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.secret h3 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 31px;
+}
+
+.secret .visualItem {
+  margin-bottom: 30px;
+}
+
+.secret .visualItem img {
+  border-radius: 50%;
+}
+
+.secret .visualItem h4 {
+  font-weight: 300;
+}
+
+.todayChef {
+  background-color: #3D1101;
+  color: #fff;
+}
+
+.todayChef .chefImg {
+  height: 460px;
+  background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/main_chef_brown.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.todayChef .chefText {
+  padding: 30px;
+}
+
+.feedback {
+  padding: 50px 10px;
+}
+
+.feedback .cardItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.feedback .cardItem img {
+  border-radius: 50%;
+  width: 67px;
+  height: 67px;
+}
+
+.feedback .cardItem span {
+  display: block;
+  text-align: right;
+  color: #3D1101;
+  opacity: 0.75;
+}
+
+.booking {
+  background-color: #FAFAFA;
+  padding: 50px 10px;
+}
+
+.booking .mapArea {
+  background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/Map.png);
+  width: 460px;
+  padding: 193px 0;
+}
+
+footer {
+  background-color: #F5F5F5;
+  padding: 50px 10px;
+  color: #3D1101;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁｜六角西餐廳</title>
+    <link rel="icon" href="img/logo.ico" type="img/x-icon"/>
+
+    <meta name='description' content="主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均有業界開發經驗，讓學員學習業界主流的開發方法。" />
+    <meta property="og:title" content="六角學院形象網頁" />
+    <meta property="og:description" content="主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均有業界開發經驗，讓學員學習業界主流的開發方法。">
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://courses.hexschool.com/courses" />
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1139485184464523264/Ul78v4sv_400x400.png" /> -->
+    <link href="https://s2.aconvert.com/convert/p3r68-cdx67/a1yrt-4cw5i-001.ico" rel="apple-touch-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- fontawesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <!-- 表頭區塊 -->
+  <header class="d-flex justify-content-between align-items-center">
+    <h1 class="title mb-0">
+      <a href="index.html">六角西餐廳</a>
+    </h1>
+    <ul class="menubar d-flex pl-0 mb-0">
+      <li>
+        <a class="menubarItem" href="products.html">菜單一覽</a>
+      </li>
+      <li>
+        <a class="menubarItem" href="index.html">關於我們</a>
+      </li>
+      <li>
+        <a class="menubarItem" href="register.html">註冊</a>
+      </li>
+      <li>
+        <a class="menubarItem" href="login.html">登入</a>
+      </li>
+    </ul>
+    <a href="#" class="burgerBtn">
+        <i class="fas fa-bars"></i>
+    </a>
+  </header>
+  <div class="banner d-flex justify-content-center">
+    <div class="textArea">
+      <h2 class="PC-show">
+        咬一口就無法忘懷的漢堡
+      </h2>
+      <h2 class="M-show">
+          咬一口<br>就無法忘懷的漢堡
+      </h2>
+      <p>
+          七夕絕對無法錯過的好滋味<br><i class="fas fa-utensils mr-2"></i>六角大漢堡<i class="fas fa-utensils ml-2"></i>
+      </p>
+    </div>
+  </div>
+  <!-- 內容區塊 -->
+  <content class="productsArea container d-flex justify-content-center pt-8">
+    <div class="row">
+      <aside class="col-12 col-lg-3 col-xl-4">
+        <h2 class="menuTitle d-flex mb-4">
+          <i class="fas fa-leaf mr-4"></i>
+          <p class="fz-m mb-0">線上訂購美食</p>
+        </h2>
+        <ul class="menuList pl-0">
+          <li><a class="unSelected" href="#">全部 (23)</a></li>
+          <li><a class="unSelected" href="#">只愛吃薯條 (18)</a></li>
+          <li><a class="unSelected" href="#">加熱就可食 (1)</a></li>
+          <li><a class="menuSelected" href="#">不敗漢堡系列 (4)</a></li>
+        </ul>
+      </aside>
+      <section class="col-12 col-lg-9 col-xl-8 d-flex flex-column">
+        <nav class="d-flex flex-column flex-lg-row justify-content-lg-between">
+          <div class="searchBar input-group mb-3">
+            <input type="text" class="searchBar-input form-control" aria-label="searchBar-input" aria-describedby="searching">
+            <div class="input-group-append">
+              <button class="searchBar-btn btn btn-primary" type="button" id="searching">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <a class="cartBtn d-flex justify-content-end mr-lg-7 hvr-wobble-horizontal" href="#">
+            <p class="cartText mb-0">結帳去</p>
+            <div class="cartIcon d-flex">              
+              <i class="cartIcon-img fas fa-shopping-cart">
+                <div class="number d-flex justify-content-center align-items-center">
+                  <p class="mb-0">1</p>
+                </div>
+              </i>
+            </div>
+          </a>
+        </nav>
+        <div class="cardList-products row">
+          <ul class="col-12 d-flex flex-column flex-md-row flex-wrap justify-content-md-between mb-0">
+            <li class="card-outline">
+              <div class="card">
+                <div class="HSale-block">
+                  <p class="HSale-text fz-xs">熱銷美食</p>
+                </div>
+                <button class="classic card-head" onclick="location.href='#'">
+                  <div class="addFavorites">
+                    <i class="far fa-heart hvr-pulse-shrink"></i>
+                  </div>
+                </button>
+                <div class="card-body d-flex flex-column align-items-center justify-content-center pb-0">
+                  <a href="#" class="d-flex flex-column align-items-center hvr-float">
+                    <h3>經典漢堡套餐</h3>
+                    <p class="mb-2">Classic Hamburger Package</p>
+                  </a>
+                  <div class="price d-flex">
+                    <span>$</span>
+                    <span class="fz-m fs-i fw-700">120</span>
+                  </div>
+                </div>
+                <button class="addCart-btn d-flex btn btn-outline-danger justify-content-center align-items-center" data-toggle="modal" data-target="#exampleModalCenter">              
+                  <i class="fas fa-shopping-cart mr-2"></i>
+                  <p class="mb-0">加入購物車</p>
+                </button>
+              </div>            
+            </li>
+            <li class="card-outline">
+              <div class="card">
+                <button class="handsome card-head" onclick="location.href='#'">
+                  <div class="addFavorites">
+                    <i class="far fa-heart hvr-pulse-shrink"></i>
+                  </div>
+                </button>
+                <div class="card-body d-flex flex-column align-items-center justify-content-center pb-0">
+                  <a href="#" class="d-flex flex-column align-items-center hvr-float">
+                    <h3>英俊香腸</h3>
+                    <p class="mb-2">Classic Hamburger Package</p>
+                  </a>
+                  <div class="price d-flex">
+                    <span>$</span>
+                    <span class="fz-m fs-i fw-700">1,024</span>
+                  </div>
+                </div>
+                <button class="addCart-btn d-flex btn btn-outline-danger justify-content-center align-items-center" data-toggle="modal" data-target="#exampleModalCenter">              
+                  <i class="fas fa-shopping-cart mr-2"></i>
+                  <p class="mb-0">加入購物車</p>
+                </button> 
+              </div>         
+            </li>
+            <li class="card-outline">
+              <div class="card">
+                <button class="borther card-head" onclick="location.href='#'">
+                  <div class="addFavorites">
+                    <i class="far fa-heart hvr-pulse-shrink"></i>
+                  </div>
+                </button>
+                <div class="card-body d-flex flex-column align-items-center justify-content-center pb-0">
+                  <a href="#" class="d-flex flex-column align-items-center hvr-float">
+                    <h3>漢堡兄弟</h3>
+                    <p class="mb-2">Classic Hamburger Package</p>
+                  </a>
+                  <div class="price d-flex">
+                    <span>$</span>
+                    <span class="fz-m fs-i fw-700">792</span>
+                  </div>
+                </div>
+                <button class="addCart-btn d-flex btn btn-outline-danger justify-content-center align-items-center" data-toggle="modal" data-target="#exampleModalCenter">              
+                  <i class="fas fa-shopping-cart mr-2"></i>
+                  <p class="mb-0">加入購物車</p>
+                </button>
+              </div>
+            </li>
+            <li class="card-outline mb-0">
+              <div class="card">
+                <button class="wish card-head" onclick="location.href='#'">
+                  <div class="addFavorites">
+                    <i class="far fa-heart hvr-pulse-shrink"></i>
+                  </div>
+                </button>
+                <div class="card-body d-flex flex-column align-items-center justify-content-center pb-0">
+                  <a href="#" class="d-flex flex-column align-items-center hvr-float">
+                    <h3>完美願望</h3>
+                    <p class="mb-2">Classic Hamburger Package</p>
+                  </a>
+                  <div class="price d-flex">
+                    <span>$</span>
+                    <span class="fz-m fs-i fw-700">999,999</span>
+                  </div>
+                </div>
+                <button class="addCart-btn d-flex btn btn-outline-danger justify-content-center align-items-center" data-toggle="modal" data-target="#exampleModalCenter">              
+                  <i class="fas fa-shopping-cart mr-2"></i>
+                  <p class="mb-0">加入購物車</p>
+                </button>
+              </div>
+            </li>
+            <li class="card-outline mb-0">
+              <div class="card">
+                <button class="brunch card-head" onclick="location.href='#'">
+                  <div class="addFavorites">
+                    <i class="far fa-heart hvr-pulse-shrink"></i>
+                  </div>
+                </button>
+                <div class="card-body d-flex flex-column align-items-center justify-content-center pb-0">
+                  <a href="#" class="d-flex flex-column align-items-center hvr-float">
+                    <h3>漢堡早午餐套組</h3>
+                    <p class="mb-2">Classic Hamburger Package</p>
+                  </a>
+                  <div class="price d-flex">
+                    <span>$</span>
+                    <span class="fz-m fs-i fw-700">220</span>
+                  </div>
+                </div>
+                <button class="addCart-btn d-flex btn btn-outline-danger justify-content-center align-items-center" data-toggle="modal" data-target="#exampleModalCenter">              
+                  <i class="fas fa-shopping-cart mr-2"></i>
+                  <p class="mb-0">加入購物車</p>
+                </button>
+              </div>
+            </li>
+            <li class="card-outline mb-0">
+              <div class="card">
+                <div class="cheep d-flex align-items-center justify-content-center">
+                  <p class="m-0 fz-xs">小資首選</p>
+                </div>
+                <button class="bagel card-head" onclick="location.href='#'">
+                  <div class="addFavorites">
+                    <i class="far fa-heart hvr-pulse-shrink"></i>
+                  </div>
+                </button>
+                <div class="card-body d-flex flex-column align-items-center justify-content-center pb-0">
+                  <a href="#" class="d-flex flex-column align-items-center hvr-float">
+                    <h3>貝果漢堡</h3>
+                    <p class="mb-2">Classic Hamburger Package</p>
+                  </a>
+                  <div class="price d-flex">
+                    <span>$</span>
+                    <span class="fz-m fs-i fw-700">90</span>
+                  </div>
+                </div>
+                <button class="addCart-btn d-flex btn btn-outline-danger justify-content-center align-items-center" data-toggle="modal" data-target="#exampleModalCenter">              
+                  <i class="fas fa-shopping-cart mr-2"></i>
+                  <p class="mb-0">加入購物車</p>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-body text-center mb-0" id="exampleModalCenterbody text-center mb-0">已加入購物車</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </content>
+  <!-- 表尾區塊 -->
+  <footer class="d-flex flex-column flex-md-row justify-content-md-between">
+    <div class="about">
+      <h2 class="fz-l">關於 六角西餐廳</h2>
+      <p>
+        Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. 
+      </p>
+    </div>
+    <div class="contact">
+      <h2 class="fz-l">聯絡方式</h2>
+      <ul class="contactList">
+        <li>高雄市中正五路到底</li>
+        <li>
+          <a href="tel:+886886886">+886 886 886</a>
+        </li>
+        <li>
+          <a href="mailto:+service@hexschool.com">service@hexschool.com</a>
+        </li>
+      </ul>
+    </div>
+    <div class="details">
+      <h2 class="footerTitle">六角西餐廳</h2>
+      <ul class="iconList d-flex justify-content-end mb-0">
+        <li class="iconList-item">
+          <a href="#">
+            <i class="GPlus fab fa-google-plus-square"></i>
+          </a>
+        </li>
+        <li class="iconList-item">
+          <a href="#">
+            <i class="twitter fab fa-twitter-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="FB fab fa-facebook-square"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <a href="#" class="gotopBtn">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, Popper.js, Bootstrap JS -->
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

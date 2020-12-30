@@ -1,0 +1,201 @@
+body {
+  font-family: "Noto Sans TC", serif;
+}
+
+a, img {
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: #000;
+  max-width: 100%;
+  padding: 0 10px 0 40px;
+}
+
+header .title a, header .burgerBtn i {
+  color: #fff;
+}
+
+header .title a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .burgerBtn i {
+  font-size: 24px;
+}
+
+.menubar .menubarItem {
+  color: #fff;
+  padding: 18px 30px;
+}
+
+.menubar .menubarItem:hover {
+  color: #F56C23;
+}
+
+.burgerBtn {
+  display: none;
+}
+
+.banner {
+  background-image: url(https://hexschool.github.io/Rwd_sketch_export/preview/Welcome%20-%20header_mobile.png);
+  background-size: cover;
+  background-position: center;
+  padding: 57px 10px 113px 10px;
+}
+
+.banner .textArea {
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  text-align: center;
+  padding: 20px 6px;
+}
+
+.banner .textArea h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.banner .textArea p {
+  font-weight: 100;
+}
+
+.gotopBtn {
+  display: block;
+  text-align: center;
+  background-color: #F56C23;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.gotopBtn i {
+  font-size: 25px;
+  padding-top: 7px;
+}
+
+.gotopBtn:hover {
+  background-color: #C4561B;
+  color: #fff;
+}
+
+footer {
+  background-color: #F5F5F5;
+  padding: 50px 10px;
+  color: #3D1101;
+}
+
+footer .contactList {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+footer .contactList li {
+  list-style: disc;
+}
+
+footer .contactList li a {
+  color: #3D1101;
+}
+
+footer .contactList li a:hover {
+  color: #F56C23;
+}
+
+footer .iconList .iconList-item {
+  margin-right: 12px;
+}
+
+footer .iconList a i {
+  color: #fff;
+  font-size: 32px;
+}
+
+footer .iconList a i:hover {
+  opacity: 0.7;
+}
+
+footer .iconList .GPlus {
+  color: #DB4437;
+}
+
+footer .iconList .twitter {
+  color: #41ABE1;
+}
+
+footer .iconList .FB {
+  color: #3A5795;
+}
+
+footer .footerTitle {
+  font-size: 49px;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 560px) {
+  header {
+    padding: 0 2px 0 13px;
+  }
+  .menubar {
+    padding-left: 0;
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height 1.3s;
+    transition: max-height 1.3s;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: currentcolor;
+    text-align: center;
+    opacity: 0.85;
+  }
+  .menubar li .menubarItem {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .menubar li .menubarItem:active {
+    background-color: #3D1101;
+  }
+  .burgerBtn {
+    display: block;
+    font-size: 24px;
+    padding: 20px;
+    color: #fff;
+  }
+  .burgerBtn:hover {
+    color: #fff;
+    opacity: 0.9;
+  }
+  .active .menubar {
+    max-height: 500px;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

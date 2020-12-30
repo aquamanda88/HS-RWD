@@ -1,0 +1,83 @@
+.productsArea {
+  color: #3D1101;
+  font-weight: 300;
+}
+
+.menuTitle {
+  font-weight: 300;
+}
+
+.cardList-products .modal-header {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card {
+  width: 220px;
+  -webkit-box-shadow: 4px 4px 3px gray;
+          box-shadow: 4px 4px 3px gray;
+  background-color: #EFE9E7;
+}
+
+.card .card-head {
+  height: 120px;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card .card-head i {
+  color: #fff;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  font-size: 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card .card-head i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card .classic {
+  background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_1.png);
+}
+
+.card .handsome {
+  background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_2.png);
+}
+
+.card .borther {
+  background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_3.png);
+}
+
+.card .wish {
+  background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_4.png);
+}
+
+.card h3 {
+  font-weight: 300;
+}
+
+.card .card-body h3, .card .card-body span {
+  font-size: 20px;
+}
+
+.card .card-body p {
+  font-size: 12px;
+}
+
+.card .addCart-btn {
+  margin: 0 10px 10px 10px;
+}
+
+.card .btn-outline-danger {
+  background-color: #EFE9E7;
+}
+
+.card .btn-outline-danger:hover {
+  background-color: #FF5E45;
+}
+/*# sourceMappingURL=products.css.map */

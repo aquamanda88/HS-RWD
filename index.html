@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首頁｜六角西餐廳</title>
+  <link rel="icon" href="img/logo.ico" type="img/x-icon"/>
+
+  <meta name='description' content="主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均有業界開發經驗，讓學員學習業界主流的開發方法。" />
+  <meta property="og:title" content="六角學院形象網頁" />
+  <meta property="og:description" content="主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均有業界開發經驗，讓學員學習業界主流的開發方法。">
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:url" content="https://courses.hexschool.com/courses" />
+  <meta property="og:image" content="https://pbs.twimg.com/profile_images/1139485184464523264/Ul78v4sv_400x400.png" /> -->
+  <link href="https://s2.aconvert.com/convert/p3r68-cdx67/a1yrt-4cw5i-001.ico" rel="apple-touch-icon" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/hover-min.css">
+  <!-- fontawesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header class="d-flex justify-content-between align-items-center">
+    <h1 class="title mb-0">
+      <a href="index.html">六角西餐廳</a>
+    </h1>
+    <ul class="menubar d-flex pl-0 mb-0">
+      <li>
+        <a class="menubarItem" href="products.html">菜單一覽</a>
+      </li>
+      <li>
+        <a class="menubarItem" href="#secret">特色</a>
+      </li>
+      <li>
+        <a class="menubarItem" href="#todayChef">主廚</a>
+      </li>
+      <li>
+        <a class="menubarItem" href="#booking">地圖</a>
+      </li>
+      <li>
+        <a class="menubarItem" href="register.html">註冊</a>
+      </li>
+      <li>
+        <a class="menubarItem" href="login.html">登入</a>
+      </li>
+    </ul>
+    <a href="#" class="burgerBtn">
+        <i class="fas fa-bars"></i>
+    </a>
+  </header>
+  <div class="banner d-flex justify-content-center">
+    <div class="textArea">
+      <h2 class="PC-show">
+        咬一口就無法忘懷的漢堡
+      </h2>
+      <h2 class="M-show">
+          咬一口<br>就無法忘懷的漢堡
+      </h2>
+      <p>
+          七夕絕對無法錯過的好滋味<br><i class="fas fa-utensils mr-2"></i>六角大漢堡<i class="fas fa-utensils ml-2"></i>
+      </p>
+    </div>
+  </div>
+  <main>
+    <section class="secret" id="secret" data-aos="fade-right">
+        <h3 class="fz-m lh-m">客人總是在詢問<br>這麼好吃的秘訣是什麼</h3>
+        <ul class="visualArea row p-0">
+            <li class="visualItem col-12 col-md-4 d-flex flex-column justify-content-between align-items-center">
+                <div class="hover-border mb-5"><img class="visualItem-img" src="img/feature_1.png" alt="台灣本土蔬菜"></div>                  
+                <h4 class="fz-s mb-3">台灣本土蔬菜</h4>
+                <p>
+                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                </p>
+            </li>
+            <li class="visualItem col-12 col-md-4 d-flex flex-column justify-content-between align-items-center">
+                <div class="hover-border mb-5"><img class="visualItem-img" src="img/feature_2.png" alt="專業米其林廚師"></div>  
+                <h4 class="fz-s mb-3">專業米其林廚師</h4>
+                <p>
+                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                </p>
+            </li>
+            <li class="visualItem col-12 col-md-4 d-flex flex-column justify-content-between align-items-center">
+                <div class="hover-border mb-5"><img class="visualItem-img" src="img/feature_3.png" alt="對於專業不能退讓"></div>  
+                <h4 class="fz-s mb-3">對於專業不能退讓</h4>
+                <p>
+                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                </p>
+            </li>
+        </ul>
+    </section>        
+    <section class="todayChef d-flex flex-column flex-md-row justify-content-xl-center" id="todayChef" data-aos="fade-down">
+        <section class="chefImg"></section>
+        <section class="chefText">
+            <h2 class="fw-100 fz-m lh-m mb-0">今日主廚：帕金森、梅在帕</h2>
+            <span class="fw-100 mb-4 d-block">Tody Chef: Plum in Shock</span>
+            <p class="fw-100">
+                Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.
+            </p>
+        </section>
+    </section>
+    <section class="feedback" data-aos="flip-down">
+        <h2 class="fz-l ta-c mb-7">聽聽別人的感想</h2>
+        <ul class="cardList pl-0 d-flex flex-column flex-md-row">
+          <li class="cardItem">
+            <img class="cardItem-img" src="img/avatar_1.png" alt="">
+            <div class="card-textArea">
+              <h3 class="fz-s my-5">高雄一口吃</h3>
+              <p class="lh-m">
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </p>
+              <span class="lh-m"> -- 產品經理</span>
+            </div>
+          </li>
+          <li class="cardItem">
+            <img class="cardItem-img" src="img/avatar_2.png" alt="">
+            <div class="card-textArea">
+              <h3 class="fz-s my-5">廟口小霸王</h3>
+              <p class="lh-m">
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </p>
+              <span class="lh-m"> -- 金身道士</span>
+            </div>
+          </li>
+          <li class="cardItem">
+            <img class="cardItem-img" src="img/avatar_3.png" alt="">
+            <div class="card-textArea">
+              <h3 class="fz-s my-5">春天也來了</h3>
+              <p class="lh-m">
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </p>
+              <span class="lh-m"> -- 美麗萬分</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="booking" id="booking" data-aos="zoom-out">
+        <h2 class="fz-l ta-c mb-7">我們的位置不太夠坐<br>要不要先訂位呢？</h2>
+        <div class="bottom d-flex flex-column flex-md-row justify-content-lg-center">
+          <div class="mapArea mb-7 mb-md-0 mr-md-5"></div>
+          <form>
+            <div class="form-group">
+              <label for="booking-name">姓名</label>
+              <input type="text" class="form-control" id="booking-name" aria-describedby="nameHelp" placeholder="六角講師吃尾牙">
+            </div>
+            <div class="form-group">
+              <label for="booking-phone">電話</label>
+              <input type="tel" class="form-control" id="booking-phone" aria-describedby="phoneHelp" placeholder="02-1234567">
+            </div>
+            <div class="form-group">
+              <label for="booking-email">信箱</label>
+              <input type="email" class="form-control" id="booking-email" aria-describedby="emailHelp" placeholder="test@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="booking-number">人數</label>
+              <input type="number" class="form-control" id="booking-number" aria-describedby="numberHelp">
+            </div>
+            <div class="form-group">
+              <label for="ifvegetarian">是否需要素食</label>
+              <div class="radios d-flex">
+                <div class="form-check form-check-inline mr-7">
+                  <label class="form-check-label fz-xs mr-2" for="ifvegetarian">是</label>
+                  <input class="form-check-input" type="radio" name="vegetarian" id="ifvegetarian" value="option1">
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label fz-xs mr-2" for="ifvegetarian">否</label>
+                  <input class="form-check-input" type="radio" name="vegetarian" id="ifvegetarian" value="option2">
+                </div>
+              </div>
+            </div>
+            <div class="buttonBlock d-flex justify-content-end">
+              <button type="cancel" class="cancelBtn btn btn-dark mr-3">取消</button>
+              <button type="submit" class="submitBtn btn btn-primay">送出</button>
+            </div>
+          </form>
+        </div>
+      </section>
+  </main>
+  <footer class="d-flex flex-column flex-md-row justify-content-md-between">
+    <div class="about">
+      <h2 class="fz-l">關於 六角西餐廳</h2>
+      <p>
+        Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. 
+      </p>
+    </div>
+    <div class="contact">
+      <h2 class="fz-l">聯絡方式</h2>
+      <ul class="contactList">
+        <li>高雄市中正五路到底</li>
+        <li>
+          <a href="tel:+886886886">+886 886 886</a>
+        </li>
+        <li>
+          <a href="mailto:+service@hexschool.com">service@hexschool.com</a>
+        </li>
+      </ul>
+    </div>
+    <div class="details">
+      <h2 class="footerTitle">六角西餐廳</h2>
+      <ul class="iconList d-flex justify-content-end mb-0">
+        <li class="iconList-item">
+          <a href="#">
+            <i class="GPlus fab fa-google-plus-square"></i>
+          </a>
+        </li>
+        <li class="iconList-item">
+          <a href="#">
+            <i class="twitter fab fa-twitter-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="FB fab fa-facebook-square"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <a href="#" class="gotopBtn">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, Popper.js, Bootstrap JS -->
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
